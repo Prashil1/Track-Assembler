@@ -10,22 +10,27 @@ This project requires FFmpeg for audio processing. Download and install FFmpeg f
 
 Once installed, make sure to specify the path to the FFmpeg executable in your code using the ffmpeg_path variable.
 
+
 2. Install Python Dependencies
 
 This project uses the yt_dlp library to download and handle YouTube videos (and other media). You can install the required Python package using pip:
 
 pip install yt-dlp
 
+
 3. Set ffmpeg_path
 
-In your code, define the path to where FFmpeg is installed. For example:
+In the code, define the path to where FFmpeg is installed. For example:
 
 ffmpeg_path = "/path/to/ffmpeg"  # Change this to the actual path on your system in the [songassembler.py](https://github.com/Prashil1/Track-Assembler/blob/main/songassembler.py) file
+
 
 
 📖 Usage
 
 This project supports transition music playback, using a provided list of songs with optional time ranges.
+
+
 
 🎵 Song List Format
 
