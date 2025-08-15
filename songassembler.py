@@ -88,6 +88,7 @@ def download_youtube_as_mp3(url, output_path='.', start_time=None, end_time=None
 
         # Get the filename of the downloaded file (assumes .webm format)
         webm_file = f'{output_path}/{video_title}.webm'  # This will be the downloaded format before conversion
+                                                         # Might have to replace it to .mp4 if it downloads differently
 
         # Convert the downloaded file to MP3 using ffmpeg
         mp3_output = f'{output_path}/{video_title}.mp3'
@@ -226,6 +227,7 @@ if __name__ == "__main__":
                     else:
                         file_to_write = download_youtube_as_mp3(path_or_link, output_path=f'.\{folder_name}', start_time=start_time, end_time=end_time)
                     # Add Name into master file
+                    print(f"file '{os.path.abspath(file_to_write)}'\n")
                     file.write(f"file '{os.path.abspath(file_to_write)}'\n")
 
                 elif os.path.exists(path_or_link):
@@ -243,7 +245,7 @@ if __name__ == "__main__":
                         file.write(f"file '{os.path.abspath(transition_song)}'\n")
                  
     # Combine All the .mp3 Files
-    combine_mp3_files_ffmpeg(r"C:\Track Assembler\Mix 3 v4.mp3")
+    combine_mp3_files_ffmpeg(r"C:\Track Assembler\Mix.mp3")
 
     # Clean Up.
     delete_file_path(files_to_combine)
