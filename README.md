@@ -2,13 +2,17 @@
 
 Before running the project, you need to install the required dependencies.
 
-1. Install FFmpeg
+1. Installing FFmpeg and Setting It.
 
 This project requires FFmpeg for audio processing. Download and install FFmpeg from the official website:
 
 👉 [FFmpeg Download](https://ffmpeg.org/download.html)
 
 Once installed, make sure to specify the path to the FFmpeg executable in your code using the ffmpeg_path variable.
+
+In the code, define the path to where FFmpeg is installed. For example:
+
+ffmpeg_path = "/path/to/ffmpeg"  # Change this to the actual path on your system in the [songassembler.py](https://github.com/Prashil1/Track-Assembler/blob/main/songassembler.py) file
 
 
 2. Install Python Dependencies
@@ -18,11 +22,6 @@ This project uses the yt_dlp library to download and handle YouTube videos (and 
 pip install yt-dlp
 
 
-3. Set ffmpeg_path
-
-In the code, define the path to where FFmpeg is installed. For example:
-
-ffmpeg_path = "/path/to/ffmpeg"  # Change this to the actual path on your system in the [songassembler.py](https://github.com/Prashil1/Track-Assembler/blob/main/songassembler.py) file
 
 
 
